@@ -1,39 +1,27 @@
-package logicInterview;
-
-import java.util.Scanner;
+package javaLogic;
 
 public class PalindromeNumber {
 
 	public static void main(String[] args) {
-		// Ex-121,16261;
-		int rev=0;
-		int num;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Please Enter any number ");
-		num=sc.nextInt();
-		int org_num=num;
-		while(num!=0)
+	//121
+		int n=121;
+		int rev = 0;
+		int orgNum=n;
+		while(n!=0)
 		{
-			rev=rev*10+num%10;
-			num=num/10;
+		
+			rev=rev*10+n%10;
+			n=n/10;
 		}
-		
-if(org_num==rev)
-{
-	System.out.println("enter number is Palindromr ");
-}
-else
-{
-	System.out.println("enter number is not Palindromr ");
-}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-}
+     System.out.println(rev);
+     if(orgNum==rev)
+     {
+    	 System.out.println("Number is palindrome number");
+     }
+     else
+     {
+    	 System.out.println("Number is not palindrome number");
+     }
+	}
+
 }
