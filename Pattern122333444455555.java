@@ -1,4 +1,4 @@
-package javaLogic;
+package patternProgram;
 
 public class Pattern122333444455555 {
 
